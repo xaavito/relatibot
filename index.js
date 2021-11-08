@@ -13,6 +13,6 @@ app.get("/frase", (req, res, next) => {
     res.json(frases[Math.floor(Math.random() * frases.length)]);
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("Server running on port 3000");
 });
