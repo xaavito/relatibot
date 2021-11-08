@@ -9,7 +9,7 @@ const frases = [
     "eso con hitler no pasaba"
 ];
 
-app.get("/frase", (req, res, next) => {
+app.get("/", (req, res, next) => {
     res.json(frases[Math.floor(Math.random() * frases.length)]);
 });
 
