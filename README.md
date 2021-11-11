@@ -1,5 +1,3 @@
-heroku apps:create relatibot
-
-git remote add heroku https://github.com/xaavito/relatibot.git
+heroku create relatibot
 
 git push heroku master
